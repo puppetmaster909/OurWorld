@@ -21,11 +21,15 @@
   
   <script type="text/javascript">
 
+      var airconsole;
+
     function App() {
 
     /* JavaScript / Functionality. Add functions and evens here */ 
 
-      
+        this.airconsole = new AirConsole({ "orientation": "portrait" });
+
+
       /*
        * Here we are adding support for mouse events manually.
        * --> WE STRONGLY ENCOURAGE YOU TO USE THE AIRCONSOLE CONTROLS LIBRARY
@@ -50,7 +54,11 @@
         }
       }
     }
-
+    
+    App.prototype.sendMessageToScreen = function (msg) {
+        console.log("button press");
+        this.airconsole.message(AirConsole.SCREEN, { "action": msg });
+    };
 
   </script>
 </head>
