@@ -15,8 +15,8 @@ public class Spawnables : MonoBehaviour
     {
         switch (input)
         {
-            case "tringle":
-                spawnObject("cylinder");
+            case "cylinder":
+                spawnObject(input);
                 break;
             case "square":
                 spawnObject(input);
