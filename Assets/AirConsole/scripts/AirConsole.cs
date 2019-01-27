@@ -699,7 +699,7 @@ namespace NDream.AirConsole {
 		/// </summary>
 		/// <param name="level_name">The name of the level.</param>
 		/// <param name="level_version">The version of the level.</param>
-		/// <param name="uids">An array of UIDs of the users should be included in the result. Default is all connected controllers.</param>
+		/// <param name="uids">An array of UIDs of the users should be included in the result. Default is all connected fs.</param>
 		/// <param name="ranks">An array of high score rank types. High score rank types can include data from across the world, only a specific area or a users friends. Valid array entries are "world",  "country",  "region", "city", "friends". Default is ["world"].</param>
 		/// <param name="total">Amount of high scores to return per rank type. Default is 8.</param>
 		/// <param name="top">Amount of top high scores to return per rank type. top is part of total. Default is 5.</param>
